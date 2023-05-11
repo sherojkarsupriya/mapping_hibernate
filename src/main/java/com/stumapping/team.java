@@ -66,7 +66,7 @@ public class team {
 //		ses.save(m2);
 //		ses.save(m3);
 
-      Query qu=ses.createQuery("from manager"); 
+       Query qu=ses.createQuery("from manager"); 
       
        List<manager> manlist=qu.getResultList();  
        
@@ -76,12 +76,12 @@ public class team {
        	
        	for(laptop l:lap) {
        		System.out.println(m.getManagerName()+" from "+m.getManagerLocation()+" his using"+l.getLaptopName());
-       	}
+        	}
        }
         
 		tx.commit();
 		
-	}
+	   }
 
 	}
 
